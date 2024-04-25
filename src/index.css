@@ -1,13 +1,121 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #4287f5; 
+  --error: #e50000; 
+}
 body {
+  background: #f8f9fa; 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Poppins";
+}
+header {
+  background: #333;
+}
+header .container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #fff; 
+  text-decoration: none;
+}
+.pages {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.home {
+  display: flex; 
+  justify-content: space-between; 
+}
+.outfit-details {
+  background: #f8f9fa; 
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+.outfit-details h4 {
+  margin: 0 0 15px 0; 
+  font-size: 1.3em; 
+  color: var(--primary);
+}
+.outfit-details p {
+  margin: 0;
+  font-size: 1em; 
+  color: #555;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.outfit-details span {
+  position: absolute;
+  top: 15px; 
+  right: 15px; 
+  cursor: pointer;
+  background: #ddd; 
+  padding: 8px; 
+  border-radius: 50%;
+  color: #333;
 }
+
+.outfit-details .delete-button, .outfit-details .edit-button {
+  position: absolute;
+  right: 15px; 
+  cursor: pointer;
+  background: #ddd; 
+  padding: 8px; 
+  border-radius: 50%;
+  color: #333;
+}
+
+.outfit-details .delete-button {
+  top: 15px; 
+}
+
+.outfit-details .edit-button {
+  top: 55px; 
+}
+
+
+label,
+input {
+  display: block;
+}
+input {
+  padding: 12px; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 12px; 
+  font-family: "Poppins";
+  border-radius: 8px; 
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffdddd; 
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 8px; 
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
